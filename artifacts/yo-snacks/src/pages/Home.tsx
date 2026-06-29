@@ -344,6 +344,45 @@ const Flavors = () => {
   );
 };
 
+const VideoSection = () => {
+  return (
+    <section id="video" className="py-24 relative overflow-hidden bg-gradient-to-b from-[#111111] to-[#1A1A1A]">
+      <div className="max-w-7xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.12 }}
+          transition={{ duration: 0.65 }}
+          className="text-center mb-12"
+        >
+          <h3 className="text-[#888888] font-bold tracking-[0.2em] uppercase text-sm mb-4">The Vibe</h3>
+          <h2 className="text-5xl md:text-7xl font-display uppercase">See It In Action</h2>
+          <p className="text-gray-400 mt-4 max-w-lg mx-auto text-lg">Bold flavors. Bolder energy. Watch what Yo-Snacks is all about.</p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.97 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="relative group"
+        >
+          <div className="absolute -inset-1 bg-[#FFE000] rounded-[2rem] blur-[60px] opacity-10 group-hover:opacity-20 transition-opacity duration-700" />
+          <div className="relative rounded-3xl overflow-hidden border border-[rgba(255,255,255,0.08)] aspect-video shadow-2xl">
+            <iframe
+              src="/yo-snacks-video/"
+              title="Yo-Snacks Brand Video"
+              className="w-full h-full"
+              allow="autoplay; encrypted-media"
+              loading="lazy"
+            />
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
 const WhyUs = () => {
   const stats = [
     { number: "100%", label: "Made in USA" },
@@ -617,6 +656,7 @@ export default function Home() {
         <Hero />
         <Certifications />
         <Flavors />
+        <VideoSection />
         <WhyUs />
         <Story />
         <Order />
