@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yo-Snacks — Hit Different</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announce-bar">
+    <div class="announce-track">
+      <span>🔥 Kettle Cooked &nbsp;·&nbsp; Gluten Free &nbsp;·&nbsp; Vegan &nbsp;·&nbsp; Kosher &nbsp;·&nbsp; Allergen Free &nbsp;·&nbsp; 100% Made In USA 🇺🇸 &nbsp;·&nbsp;</span>
+      <span>🔥 Kettle Cooked &nbsp;·&nbsp; Gluten Free &nbsp;·&nbsp; Vegan &nbsp;·&nbsp; Kosher &nbsp;·&nbsp; Allergen Free &nbsp;·&nbsp; 100% Made In USA 🇺🇸 &nbsp;·&nbsp;</span>
+      <span>🔥 Kettle Cooked &nbsp;·&nbsp; Gluten Free &nbsp;·&nbsp; Vegan &nbsp;·&nbsp; Kosher &nbsp;·&nbsp; Allergen Free &nbsp;·&nbsp; 100% Made In USA 🇺🇸 &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">YO<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#flavors">Flavors</a></li>
+      <li><a href="#certs">Why Us</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#order" class="btn-nav">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#flavors" onclick="closeMobile()">Flavors</a></li>
+      <li><a href="#certs" onclick="closeMobile()">Why Us</a></li>
+      <li><a href="#story" onclick="closeMobile()">Our Story</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+      <li><a href="#order" class="btn-mobile" onclick="closeMobile()">Order Now</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">YO YO YO</div>
+    <div class="hero-content">
+      <div class="hero-badge">New Drop 🔥</div>
+      <h1 class="hero-title">
+        Snacks That<br/>
+        <span class="hero-highlight">Hit Different</span>
+      </h1>
+      <p class="hero-sub">Kettle cooked. Bold flavors. Zero guilt.<br/>Made for those who don't settle for basic.</p>
+      <div class="hero-ctas">
+        <a href="#flavors" class="btn-primary">Explore Flavors</a>
+        <a href="#story" class="btn-ghost">Our Story ↓</a>
+      </div>
+      <div class="hero-tags">
+        <span>🌱 Vegan</span>
+        <span>✅ Gluten Free</span>
+        <span>🇺🇸 Made in USA</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="chip-orbit">
+        <div class="orbit-ring ring1"></div>
+        <div class="orbit-ring ring2"></div>
+        <div class="chip-center">
+          <img src="https://yo-snacks.com/wp-content/uploads/2026/06/TikkaMasala_v2.png" alt="Tikka Masala Yo-Snacks Bag" class="hero-bag" />
+        </div>
+        <div class="orbit-dot dot1">🌶️</div>
+        <div class="orbit-dot dot2">✨</div>
+        <div class="orbit-dot dot3">🔥</div>
+        <div class="orbit-dot dot4">💯</div>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- CERT STRIP -->
+  <section class="cert-strip" id="certs">
+    <div class="cert-strip-inner">
+      <div class="cert-item">
+        <div class="cert-icon">🍳</div>
+        <div class="cert-label">Kettle Cooked</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">✅</div>
+        <div class="cert-label">Certified</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🌾</div>
+        <div class="cert-label">Gluten Free</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">✡️</div>
+        <div class="cert-label">Kosher</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🛡️</div>
+        <div class="cert-label">Allergen Free</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🌱</div>
+        <div class="cert-label">Vegan</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🇺🇸</div>
+        <div class="cert-label">100% Made In USA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAVORS -->
+  <section class="flavors" id="flavors">
+    <div class="container">
+      <div class="section-label">THE LINEUP</div>
+      <h2 class="section-title">Pick Your Vibe</h2>
+      <p class="section-sub">Two bold flavors. Zero boring bites. Which one's you?</p>
+
+      <div class="flavor-grid">
+
+        <!-- Tikka Masala -->
+        <div class="flavor-card card-tikka">
+          <div class="flavor-card-glow glow-red"></div>
+          <div class="flavor-tag">Fan Fave 🔥</div>
+          <div class="flavor-img-wrap">
+            <img src="https://yo-snacks.com/wp-content/uploads/2026/06/TikkaMasala_v2.png" alt="Indian Tikka Masala" class="flavor-img" loading="lazy" />
+          </div>
+          <div class="flavor-info">
+            <div class="flavor-emoji">🌶️</div>
+            <h3 class="flavor-name">Indian Tikka Masala</h3>
+            <p class="flavor-desc">Aromatic spices, savory depth, a kiss of heat. Inspired by the streets of Mumbai — now in your hands.</p>
+            <div class="flavor-vibe">
+              <span class="vibe-tag">Bold</span>
+              <span class="vibe-tag">Spicy</span>
+              <span class="vibe-tag">Aromatic</span>
+            </div>
+            <a href="https://yo-snacks.com/wp-content/uploads/2026/05/YC_TikkaMasala_1.5oz_5.5x8.5_r1.pdf" class="btn-flavor" target="_blank">See Details →</a>
+          </div>
+        </div>
+
+        <!-- Sweet & Spice -->
+        <div class="flavor-card card-caribbean">
+          <div class="flavor-card-glow glow-coral"></div>
+          <div class="flavor-tag tag-new">New ✨</div>
+          <div class="flavor-img-wrap">
+            <img src="https://yo-snacks.com/wp-content/uploads/2026/06/Sweet_Spice_v3.png" alt="Caribbean Sweet & Spice" class="flavor-img" loading="lazy" />
+          </div>
+          <div class="flavor-info">
+            <div class="flavor-emoji">🏝️</div>
+            <h3 class="flavor-name">Caribbean Sweet & Spice</h3>
+            <p class="flavor-desc">Sweet meets heat meets island energy. A tropical adventure that lands crunchy and leaves you wanting more.</p>
+            <div class="flavor-vibe">
+              <span class="vibe-tag">Sweet</span>
+              <span class="vibe-tag">Tropical</span>
+              <span class="vibe-tag">Bold</span>
+            </div>
+            <a href="#order" class="btn-flavor">Order Now →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY YO -->
+  <section class="why-yo">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-text">
+          <div class="section-label">WHY YO-SNACKS</div>
+          <h2 class="section-title why-title">Healthier.<br/>Tastier.<br/><span class="accent-yellow">Hard to put down.</span></h2>
+          <p class="why-desc">Big snack brands fill their bags with fillers, mystery ingredients, and boring flavors. We said no to all of that. Yo-Snacks is the crunch you actually feel good about.</p>
+          <ul class="why-list">
+            <li><span class="why-check">✓</span> No artificial colors or flavors</li>
+            <li><span class="why-check">✓</span> Kettle cooked for max crunch</li>
+            <li><span class="why-check">✓</span> Bold global flavors, real ingredients</li>
+            <li><span class="why-check">✓</span> Cleaner than the big names, tastier too</li>
+          </ul>
+          <a href="#flavors" class="btn-primary">Shop the Drop</a>
+        </div>
+        <div class="why-stats">
+          <div class="stat-card">
+            <div class="stat-num">100<span>%</span></div>
+            <div class="stat-label">Made in USA</div>
+          </div>
+          <div class="stat-card stat-card-alt">
+            <div class="stat-num">0<span>g</span></div>
+            <div class="stat-label">Gluten</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Bold Flavors</div>
+          </div>
+          <div class="stat-card stat-card-alt">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Crunch Factor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-inner">
+        <div class="story-visual">
+          <div class="story-img-wrap">
+            <img src="https://yo-snacks.com/wp-content/uploads/2026/05/stack-chip-golden-calories-delicious-1-scaled-e1779828316232.png" alt="Yo-Snacks chips" class="story-img" loading="lazy" />
+            <div class="story-badge">Est. USA 🇺🇸</div>
+          </div>
+        </div>
+        <div class="story-text">
+          <div class="section-label">OUR STORY</div>
+          <h2 class="section-title">Built for Those Who<br/><span class="accent-yellow">Dare to Snack Different</span></h2>
+          <p>We believe snacking shouldn't be a compromise. You deserve something that's bold enough to match your personality, clean enough to feel good about, and crunchy enough to actually satisfy.</p>
+          <p>Yo-Snacks was born from a love of global flavors and a frustration with the same old chip aisle. We took kettle-cooked chips and loaded them with real, inspired seasoning — no shortcuts, no fillers, just flavor that hits.</p>
+          <p>Every bag is a statement: <strong>you don't have to choose between delicious and clean.</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER / CTA -->
+  <section class="cta-section" id="order">
+    <div class="cta-bg-text">ORDER</div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="section-label">GET YOUR BAG</div>
+        <h2 class="cta-title">Ready to Crunch?</h2>
+        <p class="cta-sub">Contact us to place your order or for wholesale inquiries. We ship nationwide.</p>
+        <div class="cta-contact-cards">
+          <a href="mailto:contact@yo-snacks.com" class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-info">
+              <div class="contact-label">Email Us</div>
+              <div class="contact-value">contact@yo-snacks.com</div>
+            </div>
+          </a>
+          <a href="tel:4843410617" class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div class="contact-info">
+              <div class="contact-label">Call Us</div>
+              <div class="contact-value">484 341 0617</div>
+            </div>
+          </a>
+        </div>
+        <a href="https://yo-snacks.com/wp-content/uploads/2026/05/YC_TikkaMasala_1.5oz_5.5x8.5_r1.pdf" class="btn-primary btn-large" target="_blank">View Product Sheet →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">YO<span>.</span></div>
+          <p>Crunchy. Clean. Bold.<br/>Hit different, every time.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.89a8.2 8.2 0 004.82 1.56V7.01a4.85 4.85 0 01-1.05-.32z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#order">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Certifications</h4>
+          <ul>
+            <li>Kettle Cooked</li>
+            <li>Gluten Free</li>
+            <li>Kosher</li>
+            <li>Allergen Free</li>
+            <li>Vegan</li>
+            <li>100% Made In USA</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@yo-snacks.com">contact@yo-snacks.com</a></li>
+            <li><a href="tel:4843410617">484 341 0617</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Yo-Snacks. All rights reserved. Made with 🔥 in the USA.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
