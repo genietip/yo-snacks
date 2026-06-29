@@ -1,5 +1,10 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "JfjwGDlXNR7dxW3D1b1qd"
+uri = "file://artifacts/yo-snacks/public/og-image.png"
+type = "image"
+title = "generated_image"
 
 [[outputs]]
 id = "f_7YfTvDNd9YwHVOp5VOp"

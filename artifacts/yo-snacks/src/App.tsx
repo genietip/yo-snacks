@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import EmailPopup from "@/components/EmailPopup";
 import Flavors from "@/pages/Flavors";
 import WhyUs from "@/pages/WhyUs";
 import Story from "@/pages/Story";
@@ -30,6 +31,7 @@ function App() {
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <Router />
+          <EmailPopup />
         </WouterRouter>
         <Toaster />
       </TooltipProvider>
