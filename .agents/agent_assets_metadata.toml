@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "f_7YfTvDNd9YwHVOp5VOp"
+uri = "file://artifacts/yo-snacks-video/public/audio/bg_music.mp3"
+type = "audio"
+title = "yo snacks background music"

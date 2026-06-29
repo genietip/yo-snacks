@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/yo-snacks-video/"
+title = "Yo-Snacks Video"
+version = "1.0.0"
+id = "artifacts/yo-snacks-video"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/yo-snacks-video/" ]
+localPort = 22532
+
+[services.development]
+run = "pnpm --filter @workspace/yo-snacks-video run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/yo-snacks-video", "run", "build" ]
+publicDir = "artifacts/yo-snacks-video/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22532"
+BASE_PATH = "/yo-snacks-video/"
