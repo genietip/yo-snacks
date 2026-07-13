@@ -1,0 +1,157 @@
+2026-07-13T23:11:47.233Z [INFO]: # Build environment configured with Standard build compute type: 8GiB Memory, 4vCPUs, 128GB Disk Space
+
+1
+
+2026-07-13T23:11:47.659Z [INFO]: # Cloning repository: git@github.com:genietip/yo-snacks.git
+
+2
+
+2026-07-13T23:11:48.482Z [INFO]: 
+
+3
+
+2026-07-13T23:11:48.483Z [INFO]: Cloning into 'yo-snacks'...
+
+4
+
+2026-07-13T23:11:48.483Z [INFO]: # Switching to commit: 7c4897c84dedbb3989fa8a1422fdc9c591f9f239
+
+5
+
+2026-07-13T23:11:48.610Z [INFO]: Note: switching to '7c4897c84dedbb3989fa8a1422fdc9c591f9f239'.
+
+6
+
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+
+7
+
+                                 changes and commit them, and you can discard any commits you make in this
+
+8
+
+                                 state without impacting any branches by switching back to a branch.
+
+9
+
+                                 If you want to create a new branch to retain commits you create, you may
+
+10
+
+                                 do so (now or later) by using -c with the switch command. Example:
+
+11
+
+                                 git switch -c <new-branch-name>
+
+12
+
+                                 Or undo this operation with:
+
+13
+
+                                 git switch -
+
+14
+
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+
+15
+
+                                 HEAD is now at 7c4897c Update build configuration to fix deployment errors
+
+16
+
+2026-07-13T23:11:48.686Z [INFO]: Successfully cleaned up Git credentials
+
+17
+
+2026-07-13T23:11:48.687Z [INFO]: # Checking for Git submodules at: /codebuild/output/src4235135365/src/yo-snacks/.gitmodules
+
+18
+
+2026-07-13T23:11:48.693Z [INFO]: # Retrieving environment cache...
+
+19
+
+2026-07-13T23:11:48.742Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+
+20
+
+2026-07-13T23:11:48.742Z [INFO]: ---- Setting Up SSM Secrets ----
+
+21
+
+2026-07-13T23:11:48.742Z [INFO]: SSM params {"Path":"/amplify/d2p4fb5qh13hp9/main/","WithDecryption":true}
+
+22
+
+2026-07-13T23:11:48.777Z [WARNING]: !Failed to set up process.env.secrets
+
+23
+
+2026-07-13T23:11:49.416Z [INFO]: # No package override configuration found.
+
+24
+
+2026-07-13T23:11:49.420Z [INFO]: # Retrieving cache...
+
+25
+
+2026-07-13T23:11:49.458Z [INFO]: # Retrieved cache
+
+26
+
+2026-07-13T23:11:53.618Z [INFO]: ## Starting Backend Build
+
+27
+
+                                 ## Checking for associated backend environment...
+
+28
+
+                                 ## No backend environment association found, continuing...
+
+29
+
+                                 ## Completed Backend Build
+
+30
+
+2026-07-13T23:11:53.624Z [INFO]: {"backendDuration": 0}
+
+31
+
+                                 ## Starting Frontend Build
+
+32
+
+                                 # Starting phase: preBuild
+
+33
+
+                                 # Executing command: npm install -g pnpm
+
+34
+
+2026-07-13T23:12:09.970Z [INFO]: added 1 package in 12s
+
+35
+
+2026-07-13T23:12:09.977Z [INFO]: 1 package is looking for funding
+
+36
+
+                                 run `npm fund` for details
+
+37
+
+2026-07-13T23:12:09.987Z [INFO]: # Executing command: pnpm install
+
+38
+
+2026-07-13T23:12:10.977Z [INFO]: Scope: all 10 workspace projects
+
+39
+
+2026-07-13T23:12:11.310Z [INFO]: ? Verifying lockfile against supply-chain policies (540 entries)...
