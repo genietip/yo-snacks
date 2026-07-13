@@ -7,10 +7,13 @@ frontend:
         - pnpm install
     build:
       commands:
+        - export NODE_ENV=production
         - export PORT=3000
         - export BASE_PATH=/
-        - export NODE_ENV=production
         - pnpm --filter @workspace/yo-snacks run build
+        - export BASE_PATH=/yo-snacks-video/
+        - pnpm --filter @workspace/yo-snacks-video run build
+        - cp -r artifacts/yo-snacks-video/dist/public artifacts/yo-snacks/dist/public/yo-snacks-video
   artifacts:
     baseDirectory: artifacts/yo-snacks/dist/public
     files:
