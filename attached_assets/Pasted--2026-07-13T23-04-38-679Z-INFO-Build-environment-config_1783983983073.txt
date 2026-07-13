@@ -1,0 +1,154 @@
+
+2026-07-13T23:04:38.679Z [INFO]: # Build environment configured with Standard build compute type: 8GiB Memory, 4vCPUs, 128GB Disk Space
+
+1
+
+2026-07-13T23:04:39.163Z [INFO]: # Cloning repository: git@github.com:genietip/yo-snacks.git
+
+2
+
+2026-07-13T23:04:40.032Z [INFO]: 
+
+3
+
+2026-07-13T23:04:40.032Z [INFO]: Cloning into 'yo-snacks'...
+
+4
+
+2026-07-13T23:04:40.033Z [INFO]: # Checking for Git submodules at: /codebuild/output/src2374792274/src/yo-snacks/.gitmodules
+
+5
+
+2026-07-13T23:04:40.040Z [INFO]: # Retrieving environment cache...
+
+6
+
+2026-07-13T23:04:40.092Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+
+7
+
+2026-07-13T23:04:40.092Z [INFO]: ---- Setting Up SSM Secrets ----
+
+8
+
+2026-07-13T23:04:40.092Z [INFO]: SSM params {"Path":"/amplify/d2p4fb5qh13hp9/main/","WithDecryption":true}
+
+9
+
+2026-07-13T23:04:40.141Z [WARNING]: !Failed to set up process.env.secrets
+
+10
+
+2026-07-13T23:04:40.844Z [INFO]: # No package override configuration found.
+
+11
+
+2026-07-13T23:04:40.847Z [INFO]: # Retrieving cache...
+
+12
+
+2026-07-13T23:04:40.890Z [INFO]: # Retrieved cache
+
+13
+
+2026-07-13T23:04:47.055Z [INFO]: ## Starting Backend Build
+
+14
+
+                                 ## Checking for associated backend environment...
+
+15
+
+                                 ## No backend environment association found, continuing...
+
+16
+
+                                 ## Completed Backend Build
+
+17
+
+2026-07-13T23:04:47.061Z [INFO]: {"backendDuration": 0}
+
+18
+
+                                 ## Starting Frontend Build
+
+19
+
+                                 # Starting phase: preBuild
+
+20
+
+                                 # Executing command: npm install -g pnpm
+
+21
+
+2026-07-13T23:05:07.089Z [INFO]: added 1 package in 14s
+
+22
+
+                                 1 package is looking for funding
+
+23
+
+2026-07-13T23:05:07.096Z [INFO]: run `npm fund` for details
+
+24
+
+2026-07-13T23:05:07.096Z [INFO]: # Executing command: pnpm install
+
+25
+
+2026-07-13T23:05:07.999Z [INFO]: Scope: all 10 workspace projects
+
+26
+
+2026-07-13T23:05:08.385Z [INFO]: ? Verifying lockfile against supply-chain policies (540 entries)...
+
+27
+
+2026-07-13T23:05:08.399Z [INFO]: Lockfile is up to date, resolution step is skipped
+
+28
+
+2026-07-13T23:05:08.534Z [INFO]: Progress: resolved 1, reused 0, downloaded 0, added 0
+
+29
+
+2026-07-13T23:05:08.643Z [INFO]: Packages: +538
+
+30
+
+                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+31
+
+2026-07-13T23:05:09.549Z [INFO]: Progress: resolved 538, reused 0, downloaded 0, added 0
+
+32
+
+2026-07-13T23:05:10.563Z [INFO]: Progress: resolved 538, reused 0, downloaded 22, added 0
+
+33
+
+2026-07-13T23:05:11.575Z [INFO]: Progress: resolved 538, reused 0, downloaded 240, added 16
+
+34
+
+2026-07-13T23:05:12.595Z [INFO]: ✓ Lockfile passes supply-chain policies (540 entries in 4.2s)
+
+35
+
+2026-07-13T23:05:12.597Z [INFO]: Progress: resolved 538, reused 0, downloaded 319, added 20
+
+36
+
+2026-07-13T23:05:13.598Z [INFO]: Progress: resolved 538, reused 0, downloaded 424, added 28
+
+37
+
+2026-07-13T23:05:14.593Z [INFO]: Progress: resolved 538, reused 0, downloaded 538, added 538, done
+
+38
+
+2026-07-13T23:05:14.955Z [INFO]: devDependencies:
