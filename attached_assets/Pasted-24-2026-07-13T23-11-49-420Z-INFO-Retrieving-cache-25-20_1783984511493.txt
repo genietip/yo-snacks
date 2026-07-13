@@ -1,0 +1,156 @@
+24
+
+2026-07-13T23:11:49.420Z [INFO]: # Retrieving cache...
+
+25
+
+2026-07-13T23:11:49.458Z [INFO]: # Retrieved cache
+
+26
+
+2026-07-13T23:11:53.618Z [INFO]: ## Starting Backend Build
+
+27
+
+                                 ## Checking for associated backend environment...
+
+28
+
+                                 ## No backend environment association found, continuing...
+
+29
+
+                                 ## Completed Backend Build
+
+30
+
+2026-07-13T23:11:53.624Z [INFO]: {"backendDuration": 0}
+
+31
+
+                                 ## Starting Frontend Build
+
+32
+
+                                 # Starting phase: preBuild
+
+33
+
+                                 # Executing command: npm install -g pnpm
+
+34
+
+2026-07-13T23:12:09.970Z [INFO]: added 1 package in 12s
+
+35
+
+2026-07-13T23:12:09.977Z [INFO]: 1 package is looking for funding
+
+36
+
+                                 run `npm fund` for details
+
+37
+
+2026-07-13T23:12:09.987Z [INFO]: # Executing command: pnpm install
+
+38
+
+2026-07-13T23:12:10.977Z [INFO]: Scope: all 10 workspace projects
+
+39
+
+2026-07-13T23:12:11.310Z [INFO]: ? Verifying lockfile against supply-chain policies (540 entries)...
+
+40
+
+2026-07-13T23:12:11.322Z [INFO]: Lockfile is up to date, resolution step is skipped
+
+41
+
+2026-07-13T23:12:11.473Z [INFO]: Progress: resolved 1, reused 0, downloaded 0, added 0
+
+42
+
+2026-07-13T23:12:11.566Z [INFO]: Packages: +538
+
+43
+
+                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+44
+
+2026-07-13T23:12:12.481Z [INFO]: Progress: resolved 538, reused 0, downloaded 0, added 0
+
+45
+
+2026-07-13T23:12:13.491Z [INFO]: Progress: resolved 538, reused 0, downloaded 55, added 0
+
+46
+
+2026-07-13T23:12:14.510Z [INFO]: Progress: resolved 538, reused 0, downloaded 278, added 19
+
+47
+
+2026-07-13T23:12:15.585Z [INFO]: ✓ Lockfile passes supply-chain policies (540 entries in 4.2s)
+
+48
+
+2026-07-13T23:12:15.600Z [INFO]: Progress: resolved 538, reused 0, downloaded 349, added 24
+
+49
+
+2026-07-13T23:12:16.590Z [INFO]: Progress: resolved 538, reused 0, downloaded 476, added 32
+
+50
+
+2026-07-13T23:12:17.567Z [INFO]: Progress: resolved 538, reused 0, downloaded 538, added 538, done
+
+51
+
+2026-07-13T23:12:17.918Z [INFO]: devDependencies:
+
+52
+
+                                 + prettier 3.8.4
+
+53
+
+                                 + typescript 5.9.3
+
+54
+
+2026-07-13T23:12:17.938Z [INFO]: . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+
+55
+
+2026-07-13T23:12:17.967Z [INFO]: . preinstall: Done
+
+56
+
+2026-07-13T23:12:18.111Z [INFO]: [ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.27.3
+
+57
+
+                                 Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+
+58
+
+2026-07-13T23:12:18.214Z [ERROR]: !!! Build failed
+
+59
+
+2026-07-13T23:12:18.214Z [ERROR]: !!! Error: Command failed with exit code 1
+
+60
+
+2026-07-13T23:12:18.214Z [INFO]: # Starting environment caching...
+
+61
+
+2026-07-13T23:12:18.215Z [INFO]: # Environment caching completed
+
+62
+
+63
+
