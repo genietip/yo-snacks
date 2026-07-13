@@ -19,8 +19,8 @@ export default function Story() {
           >
             <div className="rounded-3xl overflow-hidden border border-[#242424]">
               <img
-                src="https://yo-snacks.com/wp-content/uploads/2026/05/stack-chip-golden-calories-delicious-1-scaled-e1779828316232.png"
-                alt="Stack of golden kettle cooked chips"
+                src="/friends-park.png"
+                alt="Friends enjoying Yo-Snacks together"
                 className="w-full h-auto object-cover"
                 style={{ maxHeight: "calc(100vh - 220px)" }}
               />

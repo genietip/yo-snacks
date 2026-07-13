@@ -18,8 +18,8 @@ export default function SharedNav() {
     <>
       <nav className="w-full z-40 bg-[rgba(26,26,26,0.96)] border-b border-[rgba(255,255,255,0.05)] shrink-0">
         <div className="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-display tracking-wider text-white hover:text-[#FFE000] transition-colors">
-            YO<span className="text-[#FFE000]">.</span>
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src="/yo-logo.jpg" alt="YO! Snacks" className="h-10 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
