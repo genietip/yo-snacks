@@ -72,7 +72,7 @@ export default function Home() {
 
                 {/* Cert pills */}
                 <div className="flex flex-wrap gap-2">
-                  {["🌱 Vegan", "✅ Gluten Free", "🇺🇸 Made in USA", "✡️ Kosher", "🛡️ Allergen Free"].map((c) => (
+                  {["🌱 Vegan", "✅ Gluten Free", "🇺🇸 Made in USA", "🛡️ Allergen Free"].map((c) => (
                     <span key={c} className="bg-[#242424] px-3 py-1 rounded-full text-xs text-gray-300 border border-[rgba(255,255,255,0.05)] font-body">
                       {c}
                     </span>
@@ -142,7 +142,7 @@ export default function Home() {
                 { icon: "🍳", label: "Kettle Cooked" },
 
                 { icon: "🌾", label: "Gluten Free" },
-                { icon: "✡️", label: "Kosher" },
+
                 { icon: "🛡️", label: "Allergen Free" },
                 { icon: "🌱", label: "Vegan" },
                 { icon: "🇺🇸", label: "100% Made In USA" },

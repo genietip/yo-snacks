@@ -93,7 +93,7 @@ export default function Contact() {
 
       <div className="bg-[#FFE000] text-black py-2.5 px-6 shrink-0">
         <div className="max-w-[1600px] mx-auto flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1">
-          {["🍳 Kettle Cooked", "🌾 Gluten Free", "✡️ Kosher", "🛡️ Allergen Free", "🌱 Vegan", "🇺🇸 100% Made In USA"].map((c) => (
+          {["🍳 Kettle Cooked", "🌾 Gluten Free", "🛡️ Allergen Free", "🌱 Vegan", "🇺🇸 100% Made In USA"].map((c) => (
             <span key={c} className="font-bold uppercase tracking-wider text-[10px]">{c}</span>
           ))}
         </div>
