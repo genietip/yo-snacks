@@ -1,0 +1,138 @@
+
+2026-07-13T22:59:42.614Z [INFO]: # Checking for Git submodules at: /codebuild/output/src3061500115/src/yo-snacks/.gitmodules
+
+5
+
+2026-07-13T22:59:42.621Z [INFO]: # Retrieving environment cache...
+
+6
+
+2026-07-13T22:59:42.660Z [WARNING]: ! Unable to write cache: {"code":"ERR_BAD_REQUEST","message":"Request failed with status code 404"})}
+
+7
+
+2026-07-13T22:59:42.660Z [INFO]: ---- Setting Up SSM Secrets ----
+
+8
+
+2026-07-13T22:59:42.660Z [INFO]: SSM params {"Path":"/amplify/d2p4fb5qh13hp9/main/","WithDecryption":true}
+
+9
+
+2026-07-13T22:59:42.707Z [WARNING]: !Failed to set up process.env.secrets
+
+10
+
+2026-07-13T22:59:43.374Z [INFO]: # No package override configuration found.
+
+11
+
+2026-07-13T22:59:43.377Z [INFO]: # Retrieving cache...
+
+12
+
+2026-07-13T22:59:43.417Z [INFO]: # Retrieved cache
+
+13
+
+2026-07-13T22:59:47.138Z [INFO]: ## Starting Backend Build
+
+14
+
+                                 ## Checking for associated backend environment...
+
+15
+
+                                 ## No backend environment association found, continuing...
+
+16
+
+                                 ## Completed Backend Build
+
+17
+
+2026-07-13T22:59:47.150Z [INFO]: ## Starting Frontend Build
+
+18
+
+                                 # Starting phase: preBuild
+
+19
+
+                                 # Executing command: npm install -g pnpm
+
+20
+
+2026-07-13T23:00:03.451Z [INFO]: added 1 package in 13s
+
+21
+
+2026-07-13T23:00:03.458Z [INFO]: 1 package is looking for funding
+
+22
+
+                                 run `npm fund` for details
+
+23
+
+2026-07-13T23:00:03.460Z [INFO]: # Executing command: pnpm install
+
+24
+
+2026-07-13T23:00:04.307Z [INFO]: Scope: all 10 workspace projects
+
+25
+
+2026-07-13T23:00:04.589Z [INFO]: ? Verifying lockfile against supply-chain policies (540 entries)...
+
+26
+
+2026-07-13T23:00:04.602Z [INFO]: Lockfile is up to date, resolution step is skipped
+
+27
+
+2026-07-13T23:00:04.729Z [INFO]: Progress: resolved 1, reused 0, downloaded 0, added 0
+
+28
+
+2026-07-13T23:00:04.832Z [INFO]: Packages: +538
+
+29
+
+                                 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+30
+
+2026-07-13T23:00:05.741Z [INFO]: Progress: resolved 538, reused 0, downloaded 0, added 0
+
+31
+
+2026-07-13T23:00:06.754Z [INFO]: Progress: resolved 538, reused 0, downloaded 43, added 0
+
+32
+
+2026-07-13T23:00:07.762Z [INFO]: Progress: resolved 538, reused 0, downloaded 271, added 17
+
+33
+
+2026-07-13T23:00:08.762Z [INFO]: Progress: resolved 538, reused 0, downloaded 345, added 24
+
+34
+
+2026-07-13T23:00:09.008Z [INFO]: ✓ Lockfile passes supply-chain policies (540 entries in 4.4s)
+
+35
+
+2026-07-13T23:00:09.763Z [INFO]: Progress: resolved 538, reused 0, downloaded 447, added 32
+
+36
+
+2026-07-13T23:00:10.764Z [INFO]: Progress: resolved 538, reused 0, downloaded 538, added 414
+
+37
+
+2026-07-13T23:00:10.906Z [INFO]: Progress: resolved 538, reused 0, downloaded 538, added 538, done
+
+38
+
+2026-07-13T23:00:11.289Z [INFO]: devDependencies:
