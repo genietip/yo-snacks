@@ -7,7 +7,10 @@ frontend:
         - pnpm install
     build:
       commands:
-        - PORT=3000 BASE_PATH=/ pnpm --filter @workspace/yo-snacks run build
+        - export PORT=3000
+        - export BASE_PATH=/
+        - export NODE_ENV=production
+        - pnpm --filter @workspace/yo-snacks run build
   artifacts:
     baseDirectory: artifacts/yo-snacks/dist/public
     files:
@@ -15,5 +18,4 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-      - artifacts/yo-snacks/node_modules/**/*
       - ~/.pnpm-store/**/*
