@@ -82,10 +82,11 @@ export default function VideoTemplate({
 
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden font-body">
+      <div className="relative w-full h-screen overflow-hidden font-body bg-[#1A1A1A]">
         {/* Persistent background */}
         <motion.div
           className="absolute inset-0"
+          initial={{ backgroundColor: '#1A1A1A' }}
           animate={{ backgroundColor: bgColors[sceneIndex] ?? '#1A1A1A' }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         />

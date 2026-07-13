@@ -23,7 +23,7 @@ export function Scene2() {
       <div className="absolute inset-0 flex">
         {/* Left Side - Tikka Masala */}
         <motion.div 
-          className="w-1/2 h-full flex flex-col items-center justify-center relative overflow-hidden"
+          className="w-1/2 h-full bg-[#1A1A1A] flex flex-col items-center justify-center relative overflow-hidden"
           initial={{ x: '-100%' }}
           animate={phase >= 1 ? { x: '0%' } : { x: '-100%' }}
           transition={{ type: 'spring', stiffness: 300, damping: 25 }}
