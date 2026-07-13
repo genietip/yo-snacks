@@ -93,7 +93,7 @@ export function Scene6() {
               transition={{ delay: 0.1 }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}tikka-masala.png`}
+                src={`${import.meta.env.BASE_URL}tikka-masala.png?v=2`}
                 alt="Tikka Masala"
                 className="w-[10vw] object-contain drop-shadow-2xl"
               />
@@ -109,7 +109,7 @@ export function Scene6() {
               transition={{ delay: 0.25 }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}sweet-spice.png`}
+                src={`${import.meta.env.BASE_URL}sweet-spice.png?v=2`}
                 alt="Caribbean Sweet & Spice"
                 className="w-[10vw] object-contain drop-shadow-2xl"
               />
