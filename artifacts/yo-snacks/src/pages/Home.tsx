@@ -41,7 +41,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-sm md:text-base text-gray-300 max-w-xs font-body leading-relaxed">
-                  Kettle cooked. Bold flavors. Zero guilt.<br />Made for those who don't settle for basic.
+                  Bold Spice. Serious Crunch.
                 </p>
 
                 {/* Primary CTAs */}
@@ -72,7 +72,7 @@ export default function Home() {
 
                 {/* Cert pills */}
                 <div className="flex flex-wrap gap-2">
-                  {["🌱 Vegan", "✅ Gluten Free", "🇺🇸 Made in USA", "✡️ Kosher"].map((c) => (
+                  {["🌱 Vegan", "✅ Gluten Free", "🇺🇸 Made in USA", "✡️ Kosher", "🛡️ Allergen Free"].map((c) => (
                     <span key={c} className="bg-[#242424] px-3 py-1 rounded-full text-xs text-gray-300 border border-[rgba(255,255,255,0.05)] font-body">
                       {c}
                     </span>
@@ -140,7 +140,7 @@ export default function Home() {
             <div className="max-w-[1600px] mx-auto flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1">
               {[
                 { icon: "🍳", label: "Kettle Cooked" },
-                { icon: "✅", label: "Certified" },
+
                 { icon: "🌾", label: "Gluten Free" },
                 { icon: "✡️", label: "Kosher" },
                 { icon: "🛡️", label: "Allergen Free" },

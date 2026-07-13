@@ -74,16 +74,6 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
-            <a
-              href="https://yo-snacks.com/wp-content/uploads/2026/05/YC_TikkaMasala_1.5oz_5.5x8.5_r1.pdf"
-              target="_blank"
-              rel="noreferrer"
-              data-testid="btn-view-product-sheet"
-              className="inline-flex items-center gap-3 bg-[#FFE000] text-black px-8 py-3.5 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors"
-            >
-              View Product Sheet <ArrowRight size={14} />
-            </a>
-
             <div className="flex items-center gap-3">
               <a href="https://www.instagram.com/yosnacks" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full bg-[#242424] flex items-center justify-center hover:bg-[#FFE000] hover:text-black transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
@@ -103,7 +93,7 @@ export default function Contact() {
 
       <div className="bg-[#FFE000] text-black py-2.5 px-6 shrink-0">
         <div className="max-w-[1600px] mx-auto flex flex-wrap justify-center md:justify-between items-center gap-x-6 gap-y-1">
-          {["🍳 Kettle Cooked", "✅ Certified", "🌾 Gluten Free", "✡️ Kosher", "🛡️ Allergen Free", "🌱 Vegan", "🇺🇸 100% Made In USA"].map((c) => (
+          {["🍳 Kettle Cooked", "🌾 Gluten Free", "✡️ Kosher", "🛡️ Allergen Free", "🌱 Vegan", "🇺🇸 100% Made In USA"].map((c) => (
             <span key={c} className="font-bold uppercase tracking-wider text-[10px]">{c}</span>
           ))}
         </div>
