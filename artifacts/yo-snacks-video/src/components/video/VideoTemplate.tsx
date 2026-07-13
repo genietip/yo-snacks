@@ -6,11 +6,13 @@ import { Scene2 } from './video_scenes/Scene2';
 import { Scene3 } from './video_scenes/Scene3';
 import { Scene4 } from './video_scenes/Scene4';
 import { Scene5 } from './video_scenes/Scene5';
+import { Scene6 } from './video_scenes/Scene6';
 
 export const SCENE_DURATIONS: Record<string, number> = {
   hook: 4000,
   product: 6000,
   flavors: 5000,
+  lifestyle: 5000,
   certifications: 5000,
   outro: 5000,
 };
@@ -19,6 +21,7 @@ const SCENE_COMPONENTS: Record<string, React.ComponentType> = {
   hook: Scene1,
   product: Scene2,
   flavors: Scene3,
+  lifestyle: Scene6,
   certifications: Scene4,
   outro: Scene5,
 };
@@ -37,6 +40,7 @@ const bgColors = [
   '#1A1A1A',
   '#1A1A1A',
   '#1A1A1A',
+  '#0F0F0F',
   '#111111',
   '#1A1A1A',
 ];

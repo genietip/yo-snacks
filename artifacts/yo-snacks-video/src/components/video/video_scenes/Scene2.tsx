@@ -40,7 +40,7 @@ export function Scene2() {
             Indian<br/>Tikka
           </motion.h2>
           <motion.img 
-            src="https://yo-snacks.com/wp-content/uploads/2026/06/TikkaMasala_v2.png" 
+            src={`${import.meta.env.BASE_URL}tikka-masala.png`} 
             className="w-[60%] object-contain z-10 drop-shadow-2xl"
             initial={{ scale: 0, rotate: -20 }}
             animate={phase >= 2 ? { scale: 1, rotate: -5 } : { scale: 0, rotate: -20 }}
@@ -67,7 +67,7 @@ export function Scene2() {
             Sweet &<br/>Spice
           </motion.h2>
           <motion.img 
-            src="https://yo-snacks.com/wp-content/uploads/2026/06/Sweet_Spice_v3.png" 
+            src={`${import.meta.env.BASE_URL}sweet-spice.png`} 
             className="w-[60%] object-contain z-10 drop-shadow-2xl"
             initial={{ scale: 0, rotate: 20 }}
             animate={phase >= 3 ? { scale: 1, rotate: 5 } : { scale: 0, rotate: 20 }}
