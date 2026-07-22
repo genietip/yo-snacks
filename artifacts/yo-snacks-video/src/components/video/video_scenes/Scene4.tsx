@@ -18,7 +18,6 @@ export function Scene4() {
 
   const certs = [
     { text: "Gluten Free", color: "var(--color-secondary)" },
-    { text: "Kosher", color: "var(--color-bg-dark)" },
     { text: "Allergen Free", color: "var(--color-primary)" },
     { text: "Vegan", color: "var(--color-bg-light)" },
     { text: "100% Made in USA", color: "var(--color-bg-dark)" }
