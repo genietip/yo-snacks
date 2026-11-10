@@ -24,7 +24,7 @@ const flavors = [
     img: "/sweet-spice.png",
     desc: "Sweet meets heat meets island energy. A tropical adventure that lands crunchy and leaves you wanting more.",
     tags: ["Sweet", "Tropical", "Bold"],
-    cta: { label: "Order Now", href: "/contact", external: false },
+    cta: { label: "Where to Buy", href: "/where-to-buy", external: false },
     testId: "card-flavor-caribbean",
   },
 ];

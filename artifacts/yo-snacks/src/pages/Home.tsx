@@ -53,10 +53,10 @@ export default function Home() {
                     Explore Flavors
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/where-to-buy"
                     className="border border-[rgba(255,255,255,0.2)] text-white px-6 py-2.5 rounded-full font-bold uppercase tracking-wider text-xs hover:bg-[rgba(255,255,255,0.1)] transition-colors"
                   >
-                    Order Now <ArrowRight size={12} className="inline ml-1" />
+                    Where to Buy <ArrowRight size={12} className="inline ml-1" />
                   </Link>
                 </div>
 

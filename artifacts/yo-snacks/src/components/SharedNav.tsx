@@ -7,6 +7,7 @@ const navLinks = [
   { name: "Flavors", href: "/flavors" },
   { name: "Why Us", href: "/why-us" },
   { name: "Our Story", href: "/story" },
+  { name: "Where to Buy", href: "/where-to-buy" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -38,10 +39,10 @@ export default function SharedNav() {
 
           <div className="hidden md:flex">
             <Link
-              href="/contact"
+              href="/where-to-buy"
               className="bg-[#FFE000] text-black px-5 py-2 rounded-full font-bold uppercase tracking-wider text-xs hover:bg-white transition-colors"
             >
-              Order Now
+              Where to Buy
             </Link>
           </div>
 
@@ -68,11 +69,11 @@ export default function SharedNav() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/where-to-buy"
               onClick={() => setIsOpen(false)}
               className="mt-8 bg-[#FFE000] text-black px-8 py-4 rounded-full font-bold uppercase tracking-wider text-xl hover:bg-white transition-colors"
             >
-              Order Now
+              Where to Buy
             </Link>
           </div>
         </div>

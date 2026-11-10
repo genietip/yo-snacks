@@ -188,10 +188,10 @@ export default function FlavorQuiz({ onClose }: Props) {
                   </a>
                 ) : (
                   <a
-                    href="/contact"
+                    href="/where-to-buy"
                     className="flex-1 bg-[#FFE000] text-black py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-center hover:bg-white transition-colors flex items-center justify-center gap-1.5"
                   >
-                    Order Now <ArrowRight size={12} />
+                    Where to Buy <ArrowRight size={12} />
                   </a>
                 )}
                 <button

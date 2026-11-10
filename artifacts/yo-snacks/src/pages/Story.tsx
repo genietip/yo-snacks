@@ -57,8 +57,8 @@ export default function Story() {
               <Link href="/flavors" className="bg-[#FFE000] text-black px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors">
                 Explore Flavors
               </Link>
-              <Link href="/contact" className="border border-[rgba(255,255,255,0.2)] text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[rgba(255,255,255,0.08)] transition-colors">
-                Order Now
+              <Link href="/where-to-buy" className="border border-[rgba(255,255,255,0.2)] text-white px-6 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[rgba(255,255,255,0.08)] transition-colors">
+                Where to Buy
               </Link>
             </div>
           </motion.div>

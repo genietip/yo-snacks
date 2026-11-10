@@ -9,6 +9,7 @@ import Flavors from "@/pages/Flavors";
 import WhyUs from "@/pages/WhyUs";
 import Story from "@/pages/Story";
 import Contact from "@/pages/Contact";
+import WhereToBuy from "@/pages/WhereToBuy";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/why-us" component={WhyUs} />
       <Route path="/story" component={Story} />
       <Route path="/contact" component={Contact} />
+      <Route path="/where-to-buy" component={WhereToBuy} />
       <Route component={NotFound} />
     </Switch>
   );
