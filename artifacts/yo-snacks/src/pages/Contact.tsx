@@ -75,7 +75,7 @@ export default function Contact() {
             className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
             <div className="flex items-center gap-3">
-              <a href="https://www.instagram.com/yosnacks" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full bg-[#242424] flex items-center justify-center hover:bg-[#FFE000] hover:text-black transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/eatyo_snacks?xtok=cGY1bWJnaWNzdHdr&utm_source=qr" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full bg-[#242424] flex items-center justify-center hover:bg-[#FFE000] hover:text-black transition-colors" aria-label="Instagram">
                 <Instagram size={18} />
               </a>
               <a href="https://www.tiktok.com/@yosnacks" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full bg-[#242424] flex items-center justify-center hover:bg-[#FFE000] hover:text-black transition-colors" aria-label="TikTok">

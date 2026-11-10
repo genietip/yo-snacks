@@ -6,7 +6,7 @@ import SharedNav from "@/components/SharedNav";
 import FlavorQuiz from "@/components/FlavorQuiz";
 
 const TIKTOK_URL = "https://www.tiktok.com/@yosnacks";
-const INSTAGRAM_URL = "https://www.instagram.com/yosnacks";
+const INSTAGRAM_URL = "https://www.instagram.com/eatyo_snacks?xtok=cGY1bWJnaWNzdHdr&utm_source=qr";
 
 export default function Home() {
   const [quizOpen, setQuizOpen] = useState(false);
