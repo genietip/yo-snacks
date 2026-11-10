@@ -7,21 +7,30 @@ const retailers = [
     name: "Beer Land",
     address: "1728–1736 Tilghman St, Allentown, PA 18104",
     mapQuery: "Beer Land, 1728-1736 Tilghman St, Allentown, PA 18104",
+    image: "/retailers/beer-land.png",
+    imageAlt: "Beer Land storefront on Tilghman Street",
   },
   {
     name: "Hanover Beer Store",
     address: "828 Hanover Ave, Allentown, PA 18109",
     mapQuery: "Hanover Beer Store, 828 Hanover Ave, Allentown, PA 18109",
+    image: "/retailers/hanover-beer-store.png",
+    imageAlt: "Hanover Beer Store storefront on Hanover Avenue",
   },
   {
     name: "Telangana Spice Kitchen",
-    address: "Exton, PA",
-    mapQuery: "Telangana Spice Kitchen, Exton, PA",
+    address: "8 N Pottstown Pike, Exton, PA",
+    mapQuery: "Telangana Spice Kitchen, 8 N Pottstown Pike, Exton, PA",
+    image: "/retailers/telangana-spice-kitchen.png",
+    imageAlt: "Telangana Spice Kitchen logo",
+    imageFit: "contain",
   },
   {
     name: "Himalaya Indian Grocery",
-    address: "Exton, PA",
-    mapQuery: "Himalaya Indian Grocery, Exton, PA",
+    address: "29 Marchwood Rd, Exton, PA 19341",
+    mapQuery: "Himalaya Indian Grocery, 29 Marchwood Rd, Exton, PA 19341",
+    image: "/retailers/himalaya-indian-grocery.png",
+    imageAlt: "Himalaya Indian Grocery storefront in Exton",
   },
 ];
 
@@ -56,23 +65,37 @@ export default function WhereToBuy() {
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="flex min-h-40 flex-col justify-between rounded-2xl border border-white/10 bg-[#242424] p-6"
+                className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#242424]"
               >
-                <div>
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#FFE000]/10 text-[#FFE000]">
-                    <MapPin size={19} />
-                  </div>
-                  <h2 className="font-display text-2xl uppercase">{retailer.name}</h2>
-                  <p className="mt-1 text-sm leading-relaxed text-gray-400">{retailer.address}</p>
+                <div className="aspect-[16/9] overflow-hidden bg-white/5">
+                  <img
+                    src={retailer.image}
+                    alt={retailer.imageAlt}
+                    loading="lazy"
+                    className={`h-full w-full ${
+                      retailer.imageFit === "contain"
+                        ? "object-contain bg-white p-8"
+                        : "object-cover"
+                    }`}
+                  />
                 </div>
-                <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(retailer.mapQuery)}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FFE000] transition-colors hover:text-white"
-                >
-                  Open Google Maps <ArrowUpRight size={14} />
-                </a>
+                <div className="flex flex-1 flex-col justify-between p-5 md:p-6">
+                  <div>
+                    <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full bg-[#FFE000]/10 text-[#FFE000]">
+                      <MapPin size={18} />
+                    </div>
+                    <h2 className="font-display text-2xl uppercase">{retailer.name}</h2>
+                    <p className="mt-1 text-sm leading-relaxed text-gray-400">{retailer.address}</p>
+                  </div>
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(retailer.mapQuery)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-5 inline-flex w-fit items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FFE000] transition-colors hover:text-white"
+                  >
+                    Open Google Maps <ArrowUpRight size={14} />
+                  </a>
+                </div>
               </motion.article>
             ))}
           </div>
