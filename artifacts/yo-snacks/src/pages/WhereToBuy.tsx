@@ -32,6 +32,21 @@ const retailers = [
     image: "/retailers/himalaya-indian-grocery.png",
     imageAlt: "Himalaya Indian Grocery storefront in Exton",
   },
+  {
+    name: "Coatesville Community Market",
+    address: "266 Lincoln Hwy E, Coatesville, PA 19320",
+    mapQuery: "Coatesville Community Market, 266 Lincoln Hwy E, Coatesville, PA 19320",
+  },
+  {
+    name: "United Fuel",
+    address: "299 East Lincoln Highway, Downingtown, PA 19335",
+    mapQuery: "United Fuel, 299 East Lincoln Highway, Downingtown, PA 19335",
+  },
+  {
+    name: "United Fuel",
+    address: "299 W Uwchlan Ave, Downingtown, PA 19335",
+    mapQuery: "United Fuel, 299 W Uwchlan Ave, Downingtown, PA 19335",
+  },
 ];
 
 export default function WhereToBuy() {
@@ -61,23 +76,35 @@ export default function WhereToBuy() {
           <div className="grid gap-4 sm:grid-cols-2">
             {retailers.map((retailer, index) => (
               <motion.article
-                key={retailer.name}
+                key={`${retailer.name}-${retailer.address}`}
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#242424]"
               >
                 <div className="aspect-[16/9] overflow-hidden bg-white/5">
-                  <img
-                    src={retailer.image}
-                    alt={retailer.imageAlt}
-                    loading="lazy"
-                    className={`h-full w-full ${
-                      retailer.imageFit === "contain"
-                        ? "object-contain bg-white p-8"
-                        : "object-cover"
-                    }`}
-                  />
+                  {retailer.image ? (
+                    <img
+                      src={retailer.image}
+                      alt={retailer.imageAlt}
+                      loading="lazy"
+                      className={`h-full w-full ${
+                        retailer.imageFit === "contain"
+                          ? "object-contain bg-white p-8"
+                          : "object-cover"
+                      }`}
+                    />
+                  ) : (
+                    <div className="flex h-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-[#303030] to-[#1f1f1f] px-6 text-center">
+                      <MapPin size={28} className="text-[#FFE000]" />
+                      <span className="font-display text-xl uppercase text-white/90">
+                        {retailer.name}
+                      </span>
+                      <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-gray-500">
+                        Storefront photo coming soon
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-5 md:p-6">
                   <div>
