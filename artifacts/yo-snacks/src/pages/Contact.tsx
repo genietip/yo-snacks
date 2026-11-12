@@ -13,8 +13,8 @@ const contacts = [
   {
     icon: Phone,
     label: "Call Us",
-    value: "484 341 0617",
-    href: "tel:4843410617",
+    value: "302 753 7540",
+    href: "tel:3027537540",
     testId: "link-phone",
   },
 ];
