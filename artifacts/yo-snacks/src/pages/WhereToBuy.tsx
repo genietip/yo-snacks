@@ -36,16 +36,23 @@ const retailers = [
     name: "Coatesville Community Market",
     address: "266 Lincoln Hwy E, Coatesville, PA 19320",
     mapQuery: "Coatesville Community Market, 266 Lincoln Hwy E, Coatesville, PA 19320",
+    image: "/retailers/coatesville-community-market.png",
+    imageAlt: "Coatesville Community Market storefront with the car removed",
   },
   {
     name: "United Fuel",
     address: "299 East Lincoln Highway, Downingtown, PA 19335",
     mapQuery: "United Fuel, 299 East Lincoln Highway, Downingtown, PA 19335",
+    image: "/retailers/united-fuel-lincoln.png",
+    imageAlt: "United Fuel storefront at 299 East Lincoln Highway, with the car removed",
   },
   {
     name: "United Fuel",
     address: "299 W Uwchlan Ave, Downingtown, PA 19335",
     mapQuery: "United Fuel, 299 W Uwchlan Ave, Downingtown, PA 19335",
+    image: "/retailers/united-fuel-uwchlan.png",
+    imageAlt: "United Fuel storefront at 299 W Uwchlan Avenue",
+    imageFit: "contain-dark",
   },
 ];
 
@@ -91,6 +98,8 @@ export default function WhereToBuy() {
                       className={`h-full w-full ${
                         retailer.imageFit === "contain"
                           ? "object-contain bg-white p-8"
+                          : retailer.imageFit === "contain-dark"
+                            ? "object-contain bg-[#1A1A1A]"
                           : "object-cover"
                       }`}
                     />
